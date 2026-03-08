@@ -1,24 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet shop</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
     <header>
+        <nav class="w-11/12 mx-auto my-5">
+            <div class="navbar flex justify-between">
+                <div class="flex gap-2">
+                    <img class="w-8 h-8" src="images/logo.webp" alt="">
+                    <h2 class="text-2xl font-bold">Paddy</h2>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>Shop </a></li>
+                        <li><a>ConTact</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <img src="https://img.icons8.com/?size=48&id=23280&format=png" alt="">
+                </div>
+            </div>
+        </nav>
 
     </header>
     <main>
+        <!-- banner section -->
+        <section class="banner w-11/12 mx-auto my-5">
+            <div class="card bg-base-100 ">
+                <div class="text-center ">
+                    <h3 class="text-xl font-bold text-gray-600">Bringing Families Together ❤️‍🔥</h3>
+                    <h2 class="my-5 text-4xl font-bold">Your Path to Adoption Starts Here</h2>
+                    <p class="my-5 text-gray-600">It is a long established fact that a reader will be distracted by the
+                        readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it
+                        has a.</p>
+                    <button class="btn btn-active btn-success my-5">View More</button>
+                </div>
 
+                <figure>
+                    <img src="images/pet.webp" alt="pet" />
+                </figure>
+            </div>
+        </section>
+        <!-- Adopt section -->
+        <section class="adopt text-center w-11/12 mx-auto my-5 ">
+            <h2 class="my-5 text-2xl font-bold ">Your Path to Adoption Starts Here</h2>
+            <p class="my-10 text-gray-600">It is a long established fact that a reader will be distracted by the readable
+                content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+            <div id="btn-container" class="flex justify-around">
+
+            </div>
+        </section>
+        <!-- deal and sort -->
+        <section class="w-11/12 mx-auto my-5">
+            <div class="flex justify-between items-center">
+                <h4 class="text-xl font-bold ">Best Deal For you</h4>
+                <button class="btn btn-active btn-success my-5 text-lg font-bold">Sort by price</button>
+            </div>
+        </section>
+        <!-- all pets -->
+        <section   class="w-11/12 mx-auto my-5 flex">
+            <div id="pets-chart"  class="w-3/4 grid grid-cols-1 lg:grid-cols-3 gap-5">
+                        
+            </div>
+            <div id="adoptChart" class="w-1/4  border-gray-500 rounded-xl shadow-xl shadow-slate-300">
+
+            </div>
+
+        </section>
     </main>
-    <footer>
-
+    <footer >
+        <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10 justify-around">
+            <nav >
+                <div class="flex gap-2">
+                    <img class="w-8 h-8" src="images/logo.webp" alt="">
+                    <h2 class="text-2xl font-bold">Paddy</h2>
+                </div>
+                <p class="text-sm ">Location: av. Washington 165, NY CA</p>
+                <p class="text-sm ">54003</p>
+                <p class="text-sm ">Phone: +31 85 964 47 25</p>
+                <p class="text-sm ">Email: info@yourdomain.com</p>
+                <p class="text-sm ">Openings hours: 9.00 AM - 5.00 PM</p>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Useful Links</h6>
+                <a class="link link-hover">Home</a>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Animals</a>
+                <a class="link link-hover">Foundation</a>
+                <a class="link link-hover">Contact</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Drop a Message</h6>
+                <input class="py-2 px-3 w-[240px] rounded-xl border-none bg-gray-900" type="email" placeholder="Enter your email">
+                <button class="btn btn-active btn-success my-5 text-white w-[240px]">Subscribe</button>
+            </nav>
+        </footer>
     </footer>
 
     <script src="js/pets.js"></script>
 </body>
+
 </html>
